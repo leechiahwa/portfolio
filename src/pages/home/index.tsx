@@ -1,15 +1,17 @@
-import { Helmet } from 'react-helmet'
-import { useTranslation } from 'react-i18next'
 import { Hero } from 'src/components/hero'
+import About from '../../components/About/About'
+import Projects from 'src/components/Projects/Projects'
+import Contact from 'src/components/Contact/Contact'
+import Navbar from 'src/components/Navbar'
 
 export default function Home() {
-  const { t } = useTranslation('translation')
   return (
     <>
-      <Helmet>
-        <title>{t('title')}</title>
-      </Helmet>
       <Hero />
+      <Navbar />
+      <About />
+      <Projects />
+      <Contact />
     </>
   )
 }
