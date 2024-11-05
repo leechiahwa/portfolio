@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@sky-50: theme('colors.sky.50');
 
 @layer base {
   :root {
@@ -24,6 +28,12 @@
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
     --radius: 0.5rem;
+
+    font-family: Montserrat, Inter, sans-serif;
+
+    /* To prevent scrolling horizontally */
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .dark {
@@ -46,6 +56,12 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+  }
+
+  a,
+  p,
+  button {
+    color: @sky-50;
   }
 }
 
