@@ -5,23 +5,29 @@ function ContactForm() {
   const [name, setName] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [message, setMessage] = React.useState('')
+  const [loading, setLoading] = React.useState(false)
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    setLoading(true)
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://nodemailer-backend-nu.vercel.app/api/mailService', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message }),
       })
       if (response.ok) {
         swal('Sent!', 'Your message has been sent successfully!', 'success')
+        setName('')
+        setEmail('')
+        setMessage('')
       } else {
         swal('Something went wrong!', 'The message could not be sent. Please try again.', 'error')
       }
     } catch (error) {
       swal('Something went wrong!', "The message could not be sent. Please wait while it's fixed.", 'error')
     }
+    setLoading(false)
   }
 
   return (
@@ -75,6 +81,7 @@ function ContactForm() {
         >
           Send
         </button>
+        {loading && <p className="mt-2 text-sm text-gray-400">Sending... Please wait</p>}
       </form>
     </div>
   )
