@@ -52,7 +52,6 @@ function About() {
             With a passion for creating innovative and efficient software solutions, I thrive on turning ideas into
             reality. Whether it&apos;s crafting seamless applications, optimizing systems, or developing cutting-edge
             technology, I&apos;m dedicated to delivering excellence and value in every project.
-            <br className="hidden lg:inline-block" /> I love to build amazing things.
           </p>
         </div>
         <Skills />
