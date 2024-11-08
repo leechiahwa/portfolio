@@ -31,7 +31,7 @@ function ContactForm() {
   }
 
   return (
-    <div className="mt-8 flex w-full flex-col rounded-md bg-gray-900 md:ml-auto md:mt-0 md:w-1/2 md:p-8 lg:w-1/3">
+    <div className="mt-8 flex w-full flex-col rounded-md bg-gray-900 p-8 md:ml-auto md:mt-0 md:w-1/2 lg:w-1/3">
       <h2 className="title-font mb-1 text-lg font-medium text-white">Contact Me</h2>
       <form onSubmit={handleSubmit} className="relative">
         <div className="relative mb-4">

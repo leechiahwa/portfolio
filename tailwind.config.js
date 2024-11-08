@@ -64,6 +64,10 @@ module.exports = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        fadeInFromBottom: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
         fadeInFromRight: {
           '0%': { opacity: '0', transform: 'translateX(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
@@ -90,6 +94,7 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-right': 'fadeInFromRight 1s ease-in-out forwards',
         'fade-in-left': 'fadeInFromLeft 1s ease-in-out forwards',
+        'fade-in-bottom': 'fadeInFromBottom 0.5s ease-in-out forwards',
         'fade-in': 'fadeIn 1s ease-in-out forwards',
         'letter-fade': 'fadeIn 0.5s ease-in-out forwards',
         wiggle: 'wiggle 1s ease-in-out infinite',

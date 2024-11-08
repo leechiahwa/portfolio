@@ -2,7 +2,7 @@ import React from 'react'
 
 function ContactMap() {
   return (
-    <div className="relative flex items-end justify-start overflow-hidden rounded-lg bg-gray-900 p-10 sm:mr-10 md:w-1/2 lg:w-2/3">
+    <div className="relative hidden items-end justify-start overflow-hidden rounded-lg bg-gray-900 p-10 sm:mr-10 md:flex lg:flex lg:w-2/3">
       <iframe
         width="100%"
         height="100%"
