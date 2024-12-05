@@ -42,7 +42,7 @@ function About() {
           }`}
         >
           <img
-            src="src/assets/img/melvinlee.jpeg"
+            src="./src/assets/img/melvinlee.jpeg"
             alt="Photo of Melvin"
             ref={elementRef}
             className={`sm:h-128 sm:w-128 } h-96 w-96 rounded-md

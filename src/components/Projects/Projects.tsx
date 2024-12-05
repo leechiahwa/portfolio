@@ -20,9 +20,9 @@ function Projects() {
       description:
         'A role-based e-commerce site enabling agents and sub-agents to track commissions, and make purchases through Stripe with flexible payment options such as 6 months or 12 months instalment.',
       images: [
-        'src/assets/img/ecommerce-login.png',
-        'src/assets/img/ecommerce-dashboard.png',
-        'src/assets/img/ecommerce-products.png',
+        './src/assets/img/ecommerce-login.png',
+        './src/assets/img/ecommerce-dashboard.png',
+        './src/assets/img/ecommerce-products.png',
       ],
       url: '',
     },
@@ -30,20 +30,20 @@ function Projects() {
       title: 'Mail Backend Service',
       description:
         'A backend service that sends emails using Nodemailer which is currently used in this portfolio at the contact section.',
-      image: 'src/assets/img/mailBackend.png',
+      image: './src/assets/img/mailBackend.png',
       url: '', // Add scroll contact me section
     },
     {
       title: 'Weather Wave',
       description: 'Weather forecast website using WeatherApi and Shadcn UI.',
-      image: 'src/assets/img/weatherWave.png',
+      image: './src/assets/img/weatherWave.png',
       url: 'https://leechiahwa.github.io/weather-wave/',
     },
     {
       title: 'Melody Moments',
       description:
         'An app that lets you easily view your most played songs on Spotify and lets you play them on Spotify with a click.',
-      image: 'src/assets/img/melodyMoments.png',
+      image: './src/assets/img/melodyMoments.png',
       url: 'https://leechiahwa.github.io/melody-moments/',
     },
   ]
