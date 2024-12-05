@@ -24,7 +24,6 @@ function Skills() {
     }
 
     if (currentElement && isVisible) {
-      console.log('Visible')
       const children = currentElement.children
       Array.from(children).forEach((child, index) => {
         // eslint-disable-next-line prettier/prettier
@@ -41,7 +40,7 @@ function Skills() {
   }, [isVisible])
 
   return (
-    <div ref={containerRef} className="flex flex-[1] flex-wrap items-center justify-center gap-8 p-5">
+    <div ref={containerRef} className="flex w-1/2 flex-wrap items-center justify-center gap-8 p-5">
       <SkillCard src="src/assets/icons/html.png" name="HTML" description="HyperText Markup Language" />
       <SkillCard src="src/assets/icons/css.png" name="CSS" description="Cascading Style Sheets" />
       <SkillCard src="src/assets/icons/javascript.png" name="JavaScript" description="JS" />

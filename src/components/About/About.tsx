@@ -32,12 +32,12 @@ function About() {
   return (
     <div
       id="about"
-      className=" relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-sky-950 to-sky-600"
+      className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-sky-950 to-sky-600"
     >
       <h2 className="title-font mb-4 text-3xl font-medium text-white sm:text-4xl">About</h2>
-      <div className="flex flex-row">
+      <div className="flex">
         <div
-          className={`m-5 flex flex-[1] flex-col items-center justify-center ${
+          className={`m-5 flex w-1/2 flex-col items-center justify-center ${
             isVisible ? 'animate-fade-in-left' : 'opacity-0'
           }`}
         >
