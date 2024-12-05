@@ -5,17 +5,17 @@ export default function Navbar() {
   return (
     // TODO: Fix mobile Navbar
     <header className="top-0 z-10 border-sky-700 bg-sky-900/90 md:sticky">
-      <div className="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
-        <div className="title-font mb-4 font-medium text-white md:mb-0">
-          <button className="ml-3 text-xl hover:text-rose-400" onClick={() => handleScroll('hero')}>
+      <div className="container relative mx-auto flex flex-col items-center p-2 md:flex-row">
+        <div className="mb-4 font-medium text-white md:mb-0">
+          <button className="text-xl hover:text-rose-400 md:ml-3" onClick={() => handleScroll('hero')}>
             Melvin Lee
           </button>
         </div>
-        <nav className="flex flex-wrap items-center justify-center text-base md:ml-4	md:mr-auto md:border-l md:border-gray-700 md:py-1 md:pl-4">
-          <button className="mr-5 hover:text-rose-400" onClick={() => handleScroll('about')}>
+        <nav className="flex flex-wrap items-center justify-between text-base md:ml-4	md:mr-auto md:border-l md:border-gray-700 md:py-1 md:pl-4">
+          <button className="mx-5 hover:text-rose-400 md:mr-5" onClick={() => handleScroll('about')}>
             About
           </button>
-          <button className="mr-5 hover:text-rose-400" onClick={() => handleScroll('projects')}>
+          <button className="mx-5 hover:text-rose-400 md:mr-5" onClick={() => handleScroll('projects')}>
             Projects
           </button>
         </nav>
