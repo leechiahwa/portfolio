@@ -1,5 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { SkillCard } from './SkillCard'
+import html from 'src/assets/icons/html.png'
+import css from 'src/assets/icons/css.png'
+import javascript from 'src/assets/icons/javascript.png'
+import react from 'src/assets/icons/react.png'
+import nodejs from 'src/assets/icons/nodejs.png'
 
 function Skills() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -41,11 +46,11 @@ function Skills() {
 
   return (
     <div ref={containerRef} className="flex w-1/2 flex-wrap items-center justify-center gap-8 p-5">
-      <SkillCard src="src/assets/icons/html.png" name="HTML" description="HyperText Markup Language" />
-      <SkillCard src="src/assets/icons/css.png" name="CSS" description="Cascading Style Sheets" />
-      <SkillCard src="src/assets/icons/javascript.png" name="JavaScript" description="JS" />
-      <SkillCard src="src/assets/icons/react.png" name="React" description="React JS" />
-      <SkillCard src="src/assets/icons/nodejs.png" name="Node.js" description="Node JS" />
+      <SkillCard src={html} name="HTML" description="HyperText Markup Language" />
+      <SkillCard src={css} name="CSS" description="Cascading Style Sheets" />
+      <SkillCard src={javascript} name="JavaScript" description="JS" />
+      <SkillCard src={react} name="React" description="React JS" />
+      <SkillCard src={nodejs} name="Node.js" description="Node JS" />
     </div>
   )
 }
