@@ -4,6 +4,12 @@ import { Navigation } from 'swiper/modules'
 import './projects.module.css'
 import 'swiper/css'
 import 'swiper/css/navigation'
+import ecommerceLogin from 'src/assets/img/ecommerce-login.png'
+import ecommerceDashboard from 'src/assets/img/ecommerce-dashboard.png'
+import ecommerceProducts from 'src/assets/img/ecommerce-products.png'
+import mailBackend from '/src/assets/img/mailBackend.png'
+import weatherWave from '/src/assets/img/weatherWave.png'
+import melodyMoments from '/src/assets/img/melodyMoments.png'
 
 interface Project {
   title: string
@@ -19,31 +25,27 @@ function Projects() {
       title: 'Commission-Based E-Commerce for Agents (Project for client)',
       description:
         'A role-based e-commerce site enabling agents and sub-agents to track commissions, and make purchases through Stripe with flexible payment options such as 6 months or 12 months instalment.',
-      images: [
-        './src/assets/img/ecommerce-login.png',
-        './src/assets/img/ecommerce-dashboard.png',
-        './src/assets/img/ecommerce-products.png',
-      ],
+      images: [ecommerceLogin, ecommerceDashboard, ecommerceProducts],
       url: '',
     },
     {
       title: 'Mail Backend Service',
       description:
         'A backend service that sends emails using Nodemailer which is currently used in this portfolio at the contact section.',
-      image: './src/assets/img/mailBackend.png',
+      image: mailBackend,
       url: '', // Add scroll contact me section
     },
     {
       title: 'Weather Wave',
       description: 'Weather forecast website using WeatherApi and Shadcn UI.',
-      image: './src/assets/img/weatherWave.png',
+      image: weatherWave,
       url: 'https://leechiahwa.github.io/weather-wave/',
     },
     {
       title: 'Melody Moments',
       description:
         'An app that lets you easily view your most played songs on Spotify and lets you play them on Spotify with a click.',
-      image: './src/assets/img/melodyMoments.png',
+      image: melodyMoments,
       url: 'https://leechiahwa.github.io/melody-moments/',
     },
   ]

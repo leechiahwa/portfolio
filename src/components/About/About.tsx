@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import Skills from './Skills'
+import melvinLeePhoto from 'src/assets/img/melvinlee.jpeg'
 
 function About() {
   const elementRef = useRef(null)
@@ -42,7 +43,7 @@ function About() {
           }`}
         >
           <img
-            src="./src/assets/img/melvinlee.jpeg"
+            src={melvinLeePhoto}
             alt="Photo of Melvin"
             ref={elementRef}
             className={`sm:h-128 sm:w-128 } h-96 w-96 rounded-md
