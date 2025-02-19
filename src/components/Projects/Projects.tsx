@@ -9,7 +9,7 @@ import ecommerceDashboard from 'src/assets/img/ecommerce-dashboard.png'
 import ecommerceProducts from 'src/assets/img/ecommerce-products.png'
 import mailBackend from '/src/assets/img/mailBackend.png'
 import weatherWave from '/src/assets/img/weatherWave.png'
-import melodyMoments from '/src/assets/img/melodyMoments.png'
+import wholeCompanion from '/src/assets/img/whole-companion.png'
 
 interface Project {
   title: string
@@ -42,11 +42,11 @@ function Projects() {
       url: 'https://leechiahwa.github.io/weather-wave/',
     },
     {
-      title: 'Melody Moments',
+      title: 'WHOLE. AI Health Companion',
       description:
-        'An app that lets you easily view your most played songs on Spotify and lets you play them on Spotify with a click.',
-      image: melodyMoments,
-      url: 'https://leechiahwa.github.io/melody-moments/',
+        'WHOLE is an AI health companion app that lets you view your health overview at a glance and is also a companion that you can talk to which will aid you in both physical and mental health.',
+      image: wholeCompanion,
+      url: 'https://whole-companion.vercel.app/',
     },
   ]
 
